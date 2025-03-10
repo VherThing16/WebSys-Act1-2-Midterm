@@ -45,25 +45,25 @@ font-size: 2em;
 
 
 <script>
-    // 1. Change the main title
+   
     let mainTitle = document.getElementById("main-title");
     mainTitle.textContent = "Exploring the Power of DOM Manipulation";
 
-    // 2. Count the paragraphs
+   
     let paragraphs = document.getElementsByClassName("post-paragraph");
     console.log(`Total number of paragraphs: ${paragraphs.length}`);
 
-    // 3. Find all comment authors
+   
     let commentAuthors = document.querySelectorAll("#comments-section .comment-author");
     commentAuthors.forEach(author => {
         console.log(`Comment author: ${author.textContent}`);
     });
 
-    // 4. Select the first important tag and add "(Featured)"
+    
     let firstImportantTag = document.querySelector("#tags .important");
     firstImportantTag.textContent += " (Featured)";
 
-    // 5. Highlight all important elements
+    
     function changeText(){
     let importantElements = document.querySelectorAll(".important");
     importantElements.forEach(element => {
